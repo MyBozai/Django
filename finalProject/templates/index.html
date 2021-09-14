@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>首页--旅游网站</title>
+	<link rel="stylesheet" href="{% static 'css/style.css'%}">
+	<link rel="stylesheet" href="{% static 'css/basic.css'%}">
+</head>
+<body>
+<style>
+    h2 span{color:mediumvioletred;}
+</style>
+<div style="background:#666; color:#FFF">
+    <h2 align="center">欢迎，欢迎，热烈欢迎尊贵的VVVVVVVVVIP用户 <span>{{ username }}</span> 光临本站！！！！</h2>
+</div>
+
+<header>
+	<nav id="nav">
+	<div id="logo"><img src="{% static 'img/lg.png'%}" alt=""></div>
+	<ul>
+		<li class="active"><a href="">首页</a></li>
+		<li><a href="../info">旅游资讯</a></li>
+		<li><a href="../ticket">机票订购</a></li>
+		<li><a href="../sce">风景欣赏</a></li>
+		<li><a href="../about">公司简介</a></li>
+	</ul>
+	</nav>
+</header>
+<form method="post">
+    {% csrf_token %}
+    <div class="search">
+        <div class="center"></div>
+        <input class="input" type='text' placeholder="请输入陆游景点或城市" name="place">
+        <button class="button" type="submit">搜索</button>
+        </div>
+</form>
+<div class="tour">
+	<section class="news">
+	<h2>热门旅游</h2>
+	<p>国内旅游、国外旅游、自助旅游、自驾旅游、油轮签证、主题旅游等各种最新热门旅游推荐</p>
+	</section>
+	<figure>
+	<img src="{% static 'img/tour1.jpg'%}" alt="">
+	<figcaption>
+	<strong class="title"> &lt;曼谷-芭提雅6日游&gt;</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">￥ <strong>2864</strong> 起</span>
+	</div>
+	<div class="type">国内长线</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="{% static 'img/tour1.jpg'%}" alt="">
+	<figcaption>
+	<strong class="title"> &lt;曼谷-芭提雅6日游&gt;</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">￥ <strong>2864</strong> 起</span>
+	</div>
+	<div class="type">国内长线</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="{% static 'img/tour1.jpg'%}" alt="">
+	<figcaption>
+	<strong class="title"> &lt;曼谷-芭提雅6日游&gt;</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">￥ <strong>2864</strong> 起</span>
+	</div>
+	<div class="type">国内长线</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="{% static 'img/tour1.jpg'%}" alt="">
+	<figcaption>
+	<strong class="title"> &lt;曼谷-芭提雅6日游&gt;</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">￥ <strong>2864</strong> 起</span>
+	</div>
+	<div class="type">国内长线</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="{% static 'img/tour1.jpg'%}" alt="">
+	<figcaption>
+	<strong class="title"> &lt;曼谷-芭提雅6日游&gt;</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">￥ <strong>2864</strong> 起</span>
+	</div>
+	<div class="type">国内长线</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="{% static 'img/tour1.jpg'%}" alt="">
+	<figcaption>
+	<strong class="title"> &lt;曼谷-芭提雅6日游&gt;</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">￥ <strong>2864</strong> 起</span>
+	</div>
+	<div class="type">国内长线</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="{% static 'img/tour1.jpg'%}" alt="">
+	<figcaption>
+	<strong class="title"> &lt;曼谷-芭提雅6日游&gt;</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">￥ <strong>2864</strong> 起</span>
+	</div>
+	<div class="type">国内长线</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="{% static 'img/tour1.jpg'%}" alt="">
+	<figcaption>
+	<strong class="title"> &lt;曼谷-芭提雅6日游&gt;</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">￥ <strong>2864</strong> 起</span>
+	</div>
+	<div class="type">国内长线</div>
+
+	</figcaption>
+	</figure>
+	<figure>
+	<img src="{% static 'img/tour1.jpg'%}" alt="">
+	<figcaption>
+	<strong class="title"> &lt;曼谷-芭提雅6日游&gt;</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
+	<div class="info">
+	    <em class="sat">满意度 77%</em>
+		<span class="price">￥ <strong>2864</strong> 起</span>
+	</div>
+	<div class="type">国内长线</div>
+
+	</figcaption>
+	</figure>
+	</div>
+	<footer id="footer">
+	<div class="top">
+	<div class="block left">
+	<h3>合作伙伴</h3>
+	<hr>
+	<ul>
+		<li>途牛旅游网</li>
+		<li>驴妈妈旅游网</li>
+		<li>携程旅游</li>
+		<li>中国去青年旅行社</li>
+	</ul>
+
+	</div>
+	<div class="block middle">
+	<h3>旅游FAQ</h3>
+	<hr>
+	<ul>
+		<li>旅游合同签订方式？</li>
+		<li>儿童价是基于什么制定的？</li>
+		<li>旅游的线路品质怎么界定的？</li>
+		<li>单房差是什么？</li>
+		<li>旅游保险有那些种类？</li>
+	</ul>
+	</div>
+	<div class="block right">
+	<h3>联系方式</h3>
+	<hr>
+	<ul>
+		<li>微博：weibo.com/jhc</li>
+		<li>邮件：jhc@jhc.com</li>
+		<li>地址：海棠溪路888号</li>
+
+	</ul>
+	</div>
+
+	</div>
+	</footer>
+{% if messages %}
+    <script>
+        {% for msg in messages %}
+            alert('{{ msg.message }}');
+        {% endfor %}
+    </script>
+    {% endif %}
+</body>
+</html>

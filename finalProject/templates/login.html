@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登陆界面</title>
+		<link rel="stylesheet" href="{% static 'css/login.css'%}" />
+	</head>
+	<body>
+    <form method="post">
+        {% csrf_token %}
+		<div class="box1">
+			<h1>用户登陆</h1>
+			<div class="form">账号: <input type="text" placeholder="  请输入账号" name="username"/></div>
+			<div class="form">密码: <input type="password" placeholder="  请输入密码" name="password"/></div>
+            <br><button type="submit">登陆</button>
+			<p class="p1">还没有账号？&nbsp;<a href="../register" >注册账号</a></p>
+		</div>
+    </form>
+    {% if messages %}
+    <script>
+        {% for msg in messages %}
+            alert('{{ msg.message }}');
+        {% endfor %}
+    </script>
+    {% endif %}
+	</body>
+</html>

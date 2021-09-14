@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>注册界面</title>
+		<link rel="stylesheet" href="{% static 'css/login.css'%}" />
+	</head>
+	<body>
+    <form method="post">
+        {% csrf_token %}
+		<div class="box1">
+			<h1>用户注册</h1>
+            <br>
+            <br>
+			用户
+            <br>
+            {{ operation }}
+            <br>
+            注册成功
+            <br>
+            <br>
+            <a href="../login"><button type="button" class="btn btn-success">回登录界面</button></a>
+		</div>
+    </form>
+	</body>
+</html>
